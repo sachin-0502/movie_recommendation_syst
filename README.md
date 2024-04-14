@@ -1,5 +1,7 @@
 # Movie Recommendation System
 
+[LIVE PROJECT LINK](https://movierecommendationsyst-pa3bdka3kfsv2nek9onxob.streamlit.app/) 
+
 
 ### Project Overview
 This project aims to recommend the top 10 similar movies based on the movie name which is entered by the user. The project works in such a way that the content of input movie and content of the recommended movies will be the best possible similar match.
