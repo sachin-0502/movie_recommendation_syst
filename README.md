@@ -1,6 +1,6 @@
 # Movie Recommendation System
 
-[LIVE PROJECT LINK](https://movierecommendationsyst-pa3bdka3kfsv2nek9onxob.streamlit.app/) 
+[LIVE DEMO](https://movierecommendationsyst-pa3bdka3kfsv2nek9onxob.streamlit.app/) 
 
 
 ### Project Overview
