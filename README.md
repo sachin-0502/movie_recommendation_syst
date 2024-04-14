@@ -9,7 +9,8 @@ Although the recommendation system is also possible in the form of collaborative
 
 ### Project Output
 The output is in the form of webpage which is designed using streamlit module. The webpage consist the list of all available movies which can be manually typed either and a button to fetch the result. <p> </p>
-![Screenshot (69)](https://github.com/sachin-0502/movie_recommendation/assets/144464445/b2cbc429-973f-4a16-9795-6ce316e13b10)
+![image](https://github.com/sachin-0502/movie_recommendation_syst/assets/144464445/f35896e9-a8a8-4bba-a309-502275f2981b)
+
 
 Thus, we can get the recommendation of 10 similar movies to the input movies.
 ### Tools and libraries used
@@ -22,8 +23,7 @@ Thus, we can get the recommendation of 10 similar movies to the input movies.
 ### Data Sources
 TMDB Movies dataset from Kaggle which consists two csv files containing data of 5000 movies.
 - tmdb_5000_credits = | movie_id | title | cast | crew |
-- tmdb_5000_movies  = | budget | genre | homepage | id | keywords | original_language | orginal_title | overview | popularity | production_companies | tagline | title | vote | budget | runtime | status | spoken_language | <p> </p>
-![Screenshot (67)](https://github.com/sachin-0502/movie_recommendation/assets/144464445/5d83e51e-67af-4e49-8f51-594ac5c33100)
+- tmdb_5000_movies  = | budget | genre | homepage | id | keywords | original_language | orginal_title | overview | popularity | production_companies | tagline | title | vote | budget | runtime | status | spoken_language |
 
 
 
@@ -41,7 +41,8 @@ TMDB Movies dataset from Kaggle which consists two csv files containing data of 
 ### Processed Data
 After performing all the necessary preprocessing and generating necessary tags the processed dataset we get in the below form.<p> </p> 
 
-![image](https://github.com/sachin-0502/movie_recommendation/assets/144464445/bde1295c-c336-4d98-81c0-0b8ec0f77547)
+![image](https://github.com/sachin-0502/movie_recommendation_syst/assets/144464445/d7532d5f-bf6e-4bd8-ad01-41933e08587f)
+
 
 For doing further text analysis we need to convert these generated tags to vectors with the help of vectorization ( Bag of Words ) method.
 
@@ -66,8 +67,7 @@ Since the every vector present in the dataset is now representing a point in a 5
 Defining a function which will first take the movie name and then fetch its index number from the dataframe and after fetching index number the same index's similarity vector will be fetched where top the similarity array will be sorted in descending order and from there we will fetch top 10 movies
 
 ### Output
-![image](https://github.com/sachin-0502/movie_recommendation/assets/144464445/3edbf7d2-eb56-45ed-be09-a38a0866a9f4)
-
+![image](https://github.com/sachin-0502/movie_recommendation_syst/assets/144464445/b8deb19e-a654-4d0c-9299-8f968c01b57c)
 
 # Store Analyzed Results
 To make the webpage we need to integrate the above analysis and recommendation logic into a python file which could be run directly through live server and can be deployed to any platform.
@@ -82,9 +82,8 @@ The pickle module in Python is used for serializing and deserializing Python obj
 Pickle files are files that contain serialized Python objects. These files have the extension .pkl or .pickle. Pickle files can store various types of Python objects, including lists, dictionaries, functions, and even instances of custom classes.
 
 # WebPage Creation
-In VS studio IDE , I used streamlit module to make the webpage after loading the required pickle files for necessary logical operations. Created function to recommend 10 most similar movies and all the required python scripting was done to  in this python file. <p> </p>
-![image](https://github.com/sachin-0502/movie_recommendation/assets/144464445/b673195a-f8d0-478c-a3c5-2d387d1129c8) <p> </p>
-The above webpage is the output of our whole project.
+In VS studio IDE , I used streamlit module to make the webpage after loading the required pickle files for necessary logical operations. Created function to recommend 10 most similar movies and all the required python scripting was done in a python file. <p> </p>
+
 
 ### How to run the project ?
 Open the python file and run streamlit command in the terminal.
